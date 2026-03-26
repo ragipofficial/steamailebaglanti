@@ -1,0 +1,7 @@
+Normalde steam ailesinde oyunun sadece bir kopyası bulunduğunda bu kopyayı aynı anda yalnızca bir aile üyesi oynayabiliyor. Bu sorunun üstesinden, Steam'i oyun açıkken çevrimdışı moda alarak çözebiliyoruz. Fakat Steam, eğer herhangi bir oyun açıksa, Steam'in çevrimdışı olmasına izin vermiyor. Komple interneti kesmek Discord gibi diğer uygulamalara da erişimimizi kestiği için pratik değil, ve her seferinde güvenlik duvarını açıp tekrar tekrar ayarlama yapmak çok uzun sürüyor.
+
+Bu sorunun üstesinden gelmek, ve işi pratikleştirmek için beş dakikada Batch üzerinden yaptığım programı paylaştım. Kodun çalışma prensibi çok basit, kodu yönetici olarak çalıştırdıktan sonra 1 ve 2 sayıları ile yapmak istediğiniz eylemi belirtiyorsunuz. "Steam'in Bağlantısını Kes" dediğiniz zaman yazılım güvenlik duvarınıza yeni bir komut ekleyerek Steam'in internete erişmesini engelliyor, ve böylece interneti komple kesmeden Steam'i çevrimdışı moda almış oluyorsunuz. "Steam'in Bağlantısını Aç" dediğimizde de bu ayarı silerek Steam'i tekrar eskisi gibi çevrimiçi hale getiriyor.
+
+Eğer Steam'iniz normalde olduğu gibi C diskinize kurulu değilse kod satırındaki (block program="C:\Program Files (x86)\Steam\steam.exe") kısmında Steam'in bulunduğu adresi ayarlamanız gerekiyor. 
+
+Henüz bu yöntemi Battlefield gibi çok oyunculu oyunlarda denemedim, fakat steam'in kendi ağ tespit özelliğini kullanan oyunların çalışmayacağını düşünüyorum. Crimson Desert gibi yeni ve pahalı, singleplayer oyunları gönül rahatlığı ile tüm aile oynayabilirsiniz.
